@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practico4", "Practico4.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practico5", "..\Practico5\Practico5.csproj", "{6742FB7B-0592-4049-B6D4-0627BA041186}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "P4", "P4", "{CC43EDDA-FF4A-4F30-98A0-1590D09DFF86}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "P5", "P5", "{CD84CC89-B927-43E2-A408-E068D62951D5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,10 +24,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{225CED12-DA86-4457-9D2E-FB882B5498A8} = {CC43EDDA-FF4A-4F30-98A0-1590D09DFF86}
-		{6742FB7B-0592-4049-B6D4-0627BA041186} = {CD84CC89-B927-43E2-A408-E068D62951D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8797D6A-164F-468A-85F6-764035880B3C}
