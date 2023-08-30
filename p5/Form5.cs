@@ -16,5 +16,15 @@ namespace Practico4
         {
             InitializeComponent();
         }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Bfoto_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

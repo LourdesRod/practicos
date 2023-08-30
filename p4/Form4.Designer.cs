@@ -148,6 +148,7 @@
             Controls.Add(listBox1);
             Name = "Form4";
             Text = "Formulario 4";
+            Load += Form4_Load;
             ResumeLayout(false);
             PerformLayout();
         }

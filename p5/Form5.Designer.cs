@@ -28,196 +28,306 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
-            button2 = new Button();
-            button1 = new Button();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label2 = new Label();
-            label1 = new Label();
+            Bagregar = new Button();
+            Bfoto = new Button();
+            TBfoto = new TextBox();
+            TBsaldo = new TextBox();
+            TBape = new TextBox();
+            TBnom = new TextBox();
+            RBmujer = new RadioButton();
+            RBhombre = new RadioButton();
+            Lsaldo = new Label();
+            Lsexo = new Label();
+            LFecha = new Label();
+            DTfecha = new DateTimePicker();
+            Lape = new Label();
+            Lnom = new Label();
+            dataGridView1 = new DataGridView();
+            Apellido = new DataGridViewTextBoxColumn();
+            Nombre = new DataGridViewTextBoxColumn();
+            FechaNacimiento = new DataGridViewTextBoxColumn();
+            Sexo = new DataGridViewTextBoxColumn();
+            Eliminar = new DataGridViewButtonColumn();
+            Saldo = new DataGridViewTextBoxColumn();
+            Foto = new DataGridViewImageColumn();
+            Ruta = new DataGridViewTextBoxColumn();
+            openFileDialog1 = new OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(579, 72);
+            pictureBox1.Location = new Point(971, 100);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 144);
+            pictureBox1.Size = new Size(436, 501);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
             // panel1
             // 
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(radioButton2);
-            panel1.Controls.Add(radioButton1);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
+            panel1.BackgroundImage = Practicos.Properties.Resources.images;
+            panel1.Controls.Add(Bagregar);
+            panel1.Controls.Add(Bfoto);
+            panel1.Controls.Add(TBfoto);
+            panel1.Controls.Add(TBsaldo);
+            panel1.Controls.Add(TBape);
+            panel1.Controls.Add(TBnom);
+            panel1.Controls.Add(RBmujer);
+            panel1.Controls.Add(RBhombre);
+            panel1.Controls.Add(Lsaldo);
+            panel1.Controls.Add(Lsexo);
+            panel1.Controls.Add(LFecha);
+            panel1.Controls.Add(DTfecha);
+            panel1.Controls.Add(Lape);
+            panel1.Controls.Add(Lnom);
             panel1.Font = new Font("Papyrus", 16F, FontStyle.Regular, GraphicsUnit.Point);
             panel1.ForeColor = SystemColors.ControlLightLight;
             panel1.Location = new Point(72, 43);
             panel1.Name = "panel1";
-            panel1.Size = new Size(446, 365);
+            panel1.Size = new Size(868, 607);
             panel1.TabIndex = 2;
             // 
-            // button2
+            // Bagregar
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = SystemColors.ControlText;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(160, 308);
-            button2.Name = "button2";
-            button2.Size = new Size(114, 57);
-            button2.TabIndex = 13;
-            button2.Text = "Agregar";
-            button2.TextAlign = ContentAlignment.MiddleRight;
-            button2.UseVisualStyleBackColor = true;
+            Bagregar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Bagregar.ForeColor = SystemColors.ControlText;
+            Bagregar.Image = (Image)resources.GetObject("Bagregar.Image");
+            Bagregar.ImageAlign = ContentAlignment.MiddleLeft;
+            Bagregar.Location = new Point(368, 542);
+            Bagregar.Name = "Bagregar";
+            Bagregar.Size = new Size(147, 57);
+            Bagregar.TabIndex = 13;
+            Bagregar.Text = "Agregar";
+            Bagregar.TextAlign = ContentAlignment.MiddleRight;
+            Bagregar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Bfoto
             // 
-            button1.Font = new Font("Segoe Fluent Icons", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(31, 253);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 12;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            Bfoto.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Bfoto.ForeColor = SystemColors.ControlText;
+            Bfoto.Location = new Point(38, 398);
+            Bfoto.Name = "Bfoto";
+            Bfoto.Size = new Size(112, 34);
+            Bfoto.TabIndex = 12;
+            Bfoto.Text = "FOTO";
+            Bfoto.UseVisualStyleBackColor = true;
+            Bfoto.Click += Bfoto_Click;
             // 
-            // textBox4
+            // TBfoto
             // 
-            textBox4.Location = new Point(175, 256);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 58);
-            textBox4.TabIndex = 11;
+            TBfoto.Font = new Font("Papyrus", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            TBfoto.Location = new Point(211, 398);
+            TBfoto.Name = "TBfoto";
+            TBfoto.Size = new Size(569, 45);
+            TBfoto.TabIndex = 11;
             // 
-            // textBox3
+            // TBsaldo
             // 
-            textBox3.Location = new Point(175, 206);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 58);
-            textBox3.TabIndex = 10;
+            TBsaldo.Font = new Font("Papyrus", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            TBsaldo.Location = new Point(211, 312);
+            TBsaldo.Name = "TBsaldo";
+            TBsaldo.Size = new Size(569, 45);
+            TBsaldo.TabIndex = 10;
             // 
-            // textBox2
+            // TBape
             // 
-            textBox2.Location = new Point(178, 80);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 58);
-            textBox2.TabIndex = 9;
+            TBape.Font = new Font("Papyrus", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            TBape.Location = new Point(211, 105);
+            TBape.Name = "TBape";
+            TBape.Size = new Size(569, 45);
+            TBape.TabIndex = 9;
             // 
-            // textBox1
+            // TBnom
             // 
-            textBox1.Location = new Point(177, 43);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 58);
-            textBox1.TabIndex = 8;
+            TBnom.Font = new Font("Papyrus", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            TBnom.Location = new Point(211, 30);
+            TBnom.Name = "TBnom";
+            TBnom.Size = new Size(569, 45);
+            TBnom.TabIndex = 8;
             // 
-            // radioButton2
+            // RBmujer
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(288, 156);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(241, 55);
-            radioButton2.TabIndex = 7;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
-            radioButton2.UseVisualStyleBackColor = true;
+            RBmujer.AutoSize = true;
+            RBmujer.BackColor = Color.Transparent;
+            RBmujer.Font = new Font("Papyrus", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            RBmujer.ForeColor = SystemColors.ControlLightLight;
+            RBmujer.Location = new Point(441, 255);
+            RBmujer.Name = "RBmujer";
+            RBmujer.Size = new Size(106, 42);
+            RBmujer.TabIndex = 7;
+            RBmujer.TabStop = true;
+            RBmujer.Text = "Mujer";
+            RBmujer.UseVisualStyleBackColor = false;
             // 
-            // radioButton1
+            // RBhombre
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(141, 156);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(241, 55);
-            radioButton1.TabIndex = 6;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            RBhombre.AutoSize = true;
+            RBhombre.BackColor = Color.Transparent;
+            RBhombre.Font = new Font("Papyrus", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            RBhombre.Location = new Point(248, 255);
+            RBhombre.Name = "RBhombre";
+            RBhombre.Size = new Size(128, 42);
+            RBhombre.TabIndex = 6;
+            RBhombre.TabStop = true;
+            RBhombre.Text = "Hombre";
+            RBhombre.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // Lsaldo
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(41, 204);
-            label5.Name = "label5";
-            label5.Size = new Size(102, 51);
-            label5.TabIndex = 5;
-            label5.Text = "label5";
+            Lsaldo.AutoSize = true;
+            Lsaldo.BackColor = Color.Transparent;
+            Lsaldo.Location = new Point(38, 312);
+            Lsaldo.Name = "Lsaldo";
+            Lsaldo.Size = new Size(119, 51);
+            Lsaldo.TabIndex = 5;
+            Lsaldo.Text = "Saldo:";
             // 
-            // label4
+            // Lsexo
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(45, 156);
-            label4.Name = "label4";
-            label4.Size = new Size(103, 51);
-            label4.TabIndex = 4;
-            label4.Text = "label4";
+            Lsexo.AutoSize = true;
+            Lsexo.BackColor = Color.Transparent;
+            Lsexo.Location = new Point(38, 248);
+            Lsexo.Name = "Lsexo";
+            Lsexo.Size = new Size(110, 51);
+            Lsexo.TabIndex = 4;
+            Lsexo.Text = "Sexo:";
             // 
-            // label3
+            // LFecha
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(42, 127);
-            label3.Name = "label3";
-            label3.Size = new Size(102, 51);
-            label3.TabIndex = 3;
-            label3.Text = "label3";
+            LFecha.AutoSize = true;
+            LFecha.BackColor = Color.Transparent;
+            LFecha.Location = new Point(33, 183);
+            LFecha.Name = "LFecha";
+            LFecha.Size = new Size(326, 51);
+            LFecha.TabIndex = 3;
+            LFecha.Text = "Fecha de Nacimiento:";
             // 
-            // dateTimePicker1
+            // DTfecha
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(183, 115);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(135, 58);
-            dateTimePicker1.TabIndex = 2;
+            DTfecha.CalendarFont = new Font("Perpetua", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DTfecha.Font = new Font("Perpetua", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            DTfecha.Format = DateTimePickerFormat.Short;
+            DTfecha.Location = new Point(416, 193);
+            DTfecha.Name = "DTfecha";
+            DTfecha.Size = new Size(176, 37);
+            DTfecha.TabIndex = 2;
             // 
-            // label2
+            // Lape
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(40, 73);
-            label2.Name = "label2";
-            label2.Size = new Size(102, 51);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
+            Lape.AutoSize = true;
+            Lape.BackColor = Color.Transparent;
+            Lape.Location = new Point(31, 105);
+            Lape.Name = "Lape";
+            Lape.Size = new Size(153, 51);
+            Lape.TabIndex = 1;
+            Lape.Text = "Apellido:";
             // 
-            // label1
+            // Lnom
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(31, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(102, 51);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            Lnom.AutoSize = true;
+            Lnom.BackColor = Color.Transparent;
+            Lnom.Location = new Point(31, 30);
+            Lnom.Name = "Lnom";
+            Lnom.Size = new Size(144, 51);
+            Lnom.TabIndex = 0;
+            Lnom.Text = "Nombre:";
             // 
-            // Form2
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Apellido, Nombre, FechaNacimiento, Sexo, Eliminar, Saldo, Foto, Ruta });
+            dataGridView1.Location = new Point(170, 753);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.RowTemplate.Height = 33;
+            dataGridView1.Size = new Size(1335, 225);
+            dataGridView1.TabIndex = 4;
+            // 
+            // Apellido
+            // 
+            Apellido.HeaderText = "Apellido";
+            Apellido.MinimumWidth = 8;
+            Apellido.Name = "Apellido";
+            Apellido.Width = 150;
+            // 
+            // Nombre
+            // 
+            Nombre.HeaderText = "Nombre";
+            Nombre.MinimumWidth = 8;
+            Nombre.Name = "Nombre";
+            Nombre.Width = 150;
+            // 
+            // FechaNacimiento
+            // 
+            FechaNacimiento.HeaderText = "Fecha de Nacimiento";
+            FechaNacimiento.MinimumWidth = 8;
+            FechaNacimiento.Name = "FechaNacimiento";
+            FechaNacimiento.Width = 150;
+            // 
+            // Sexo
+            // 
+            Sexo.HeaderText = "Sexo";
+            Sexo.MinimumWidth = 8;
+            Sexo.Name = "Sexo";
+            Sexo.Width = 150;
+            // 
+            // Eliminar
+            // 
+            Eliminar.HeaderText = "Eliminar";
+            Eliminar.MinimumWidth = 8;
+            Eliminar.Name = "Eliminar";
+            Eliminar.Resizable = DataGridViewTriState.True;
+            Eliminar.SortMode = DataGridViewColumnSortMode.Automatic;
+            Eliminar.Width = 150;
+            // 
+            // Saldo
+            // 
+            Saldo.HeaderText = "Saldo";
+            Saldo.MinimumWidth = 8;
+            Saldo.Name = "Saldo";
+            Saldo.Width = 150;
+            // 
+            // Foto
+            // 
+            Foto.HeaderText = "Foto";
+            Foto.MinimumWidth = 8;
+            Foto.Name = "Foto";
+            Foto.Width = 150;
+            // 
+            // Ruta
+            // 
+            Ruta.HeaderText = "Ruta";
+            Ruta.MinimumWidth = 8;
+            Ruta.Name = "Ruta";
+            Ruta.Width = 250;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // Form5
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(1659, 1050);
+            Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
-            Name = "Form2";
-            Text = "Form2";
+            Name = "Form5";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Formulario con Datagrid";
+            WindowState = FormWindowState.Maximized;
+            Load += Form5_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -225,19 +335,29 @@
 
         private PictureBox pictureBox1;
         private Panel panel1;
-        private Button button2;
-        private Button button1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private DateTimePicker dateTimePicker1;
-        private Label label2;
-        private Label label1;
+        private Button Bagregar;
+        private Button Bfoto;
+        private TextBox TBfoto;
+        private TextBox TBsaldo;
+        private TextBox TBape;
+        private TextBox TBnom;
+        private RadioButton RBmujer;
+        private RadioButton RBhombre;
+        private Label Lsaldo;
+        private Label Lsexo;
+        private Label LFecha;
+        private DateTimePicker DTfecha;
+        private Label Lape;
+        private Label Lnom;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Apellido;
+        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn FechaNacimiento;
+        private DataGridViewTextBoxColumn Sexo;
+        private DataGridViewButtonColumn Eliminar;
+        private DataGridViewTextBoxColumn Saldo;
+        private DataGridViewImageColumn Foto;
+        private DataGridViewTextBoxColumn Ruta;
+        private OpenFileDialog openFileDialog1;
     }
 }
